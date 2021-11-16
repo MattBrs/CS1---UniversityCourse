@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+struct Studente {
+	char name[20];
+	char surname[20];
+	int id;
+	double mean;
+};
+
+void printStudent(const Studente & studente);
+
+int main() {
+	return 0;
+}
+
+void printStudent(const Studente & studente) {
+  cout << "Matricola: " << studente.id << endl;
+  cout << "Nome: " << studente.name << endl;
+  cout << "Cognome: " << studente.surname << endl;
+  cout << "Media: " << studente.mean << endl;
+}
