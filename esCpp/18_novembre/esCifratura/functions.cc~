@@ -1,0 +1,32 @@
+#include "functions.h"
+#include <iostream>
+#include <cstring>
+
+void crypt(char parola[], int chiave) {
+  const int LEN = strlen(parola);
+  for(int i = 0; i < LEN; i++) {
+    char tempCrypt = parola[i] + chiave;
+    if(tempCrypt >= 'a'  &&  tempCrypt <= 'z') {
+      parola[i] = tempCrypt;
+    }else if(tempCrypt >= 'A' && tempCrypt <= 'Z') {
+      parola[i] = tempCrypt;
+    }else if(tempCrypt >= '1' && tempCrypt <= '9') {
+      parola[i] = tempCrypt;
+    }
+  }
+}
+
+void decrypt(char parola[], int chiave) {
+  const int LEN = strlen(parola);
+  for(int i = 0; i < LEN; i++) {
+    char tempCrypt = parola[i] - chiave;
+    if(tempCrypt >= 'a'  &&  tempCrypt <= 'z') {
+      parola[i] = tempCrypt;
+    }else if(tempCrypt >= 'A' && tempCrypt <= 'Z') {
+      parola[i] = tempCrypt;
+    }else if(tempCrypt >= '1' && tempCrypt <= '9') {
+      parola[i] = tempCrypt;
+    }
+  }
+}
+
