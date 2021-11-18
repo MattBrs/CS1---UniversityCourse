@@ -1,0 +1,11 @@
+#include <iostream>
+#include "esercizio1.h"
+
+using namespace std;
+
+int main() {
+  char fileName[] = "input1.txt";
+  int a = leggi_e_calcola_massimo(fileName);
+  cout << a << endl;
+  return 0;
+}
