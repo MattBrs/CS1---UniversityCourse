@@ -1,0 +1,28 @@
+#include <iostream>
+#include <fstream>
+#include "pila.h"
+#include <cstring>
+
+using namespace std;
+
+void readFile(char inputFile[]);
+
+int main(int argc, char *argv[]) {
+  if(argc != 3) {
+    cout << "Numero parametri sbagliato" << endl;
+    exit(0);
+  }
+
+  char inputFile[100] = argv[1];
+  return 0;
+}
+void readFile(char inputFile[]) {
+  fstream input;
+  input.open(inputFile, ios::in);
+
+  char buffer[256];
+  while(input >> buffer) {
+    
+  }
+  
+}
