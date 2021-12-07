@@ -1,0 +1,20 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+typedef node* list;
+struct node {
+  int number;
+  list next
+};
+
+
+int main(int argc, char *argv[]) {
+
+  fstream input, output;
+  input.open(argv[1], ios::in);
+  output.open(argv[2], ios::out);
+  
+  return 0;
+}
