@@ -1,0 +1,11 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+struct studente {
+  char nome[20];
+  char cognome[20];
+  char matricola[10];
+  double media;
+}
