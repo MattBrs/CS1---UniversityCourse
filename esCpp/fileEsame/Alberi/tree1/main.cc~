@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+struct node;
+typedef node *tree;
+struct node {
+  int value;
+  node *left, *right;
+};
+
+
+tree defTree(int elementNumber);
+
+int main() {
+  srand(time(NULL));
+  return 0;
+}
+
+tree defTree(int elementNumber) {
+  tree newTree = new node{(rand()%100), NULL, NULL};
+  for(int i = 0; i < elementNumber-1; i++) {
+    
+  }
+  
+  return newTree;
+}
+
+
