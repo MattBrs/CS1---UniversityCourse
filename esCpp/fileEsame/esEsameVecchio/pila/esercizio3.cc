@@ -43,9 +43,9 @@ void risolviLabirinto(int lab[][5], int x, int y){
   if (found) {
     while(top(c)) {
       if (!(c.indiceRiga == y && c.indiceColonna == x)) {
-	cout << c.indiceRiga << ", " << c.indiceColonna << endl;
+	      cout << c.indiceRiga << ", " << c.indiceColonna << endl;
       } else {
-	cout << c.indiceRiga << ", " << c.indiceColonna << endl;
+	      cout << c.indiceRiga << ", " << c.indiceColonna << endl;
       }
       pop();
     }
@@ -83,28 +83,28 @@ void searchPath(int labirinto[][5], int currentX, int currentY, int destinationX
     if (nextCellRight == 1 && !found) {
       cella next = {currentX+1, currentY};
       if((temp.indiceRiga != next.indiceRiga || temp.indiceColonna != next.indiceColonna)) {
-	searchPath(labirinto, currentX+1, currentY, destinationX, destinationY, gridXsize, gridYsize);
+	      searchPath(labirinto, currentX+1, currentY, destinationX, destinationY, gridXsize, gridYsize);
       }
     }
 
     if (nextCellDown == 1 && !found) {
       cella next = {currentX, currentY+1};
       if((temp.indiceRiga != next.indiceRiga || temp.indiceColonna != next.indiceColonna)) {
-	searchPath(labirinto, currentX, currentY+1, destinationX, destinationY, gridXsize, gridYsize);
+	      searchPath(labirinto, currentX, currentY+1, destinationX, destinationY, gridXsize, gridYsize);
       }
     }
 
     if (nextCellLeft ==1 && !found) {
       cella next = {currentX-1, currentY};
       if((temp.indiceRiga != next.indiceRiga || temp.indiceColonna != next.indiceColonna)) {
-	searchPath(labirinto, currentX-1, currentY, destinationX, destinationY, gridXsize, gridYsize);
+	      searchPath(labirinto, currentX-1, currentY, destinationX, destinationY, gridXsize, gridYsize);
       }
     }
 
     if (nextCellUp == 1 && !found) {
       cella next = {currentX+1, currentY};
       if((temp.indiceRiga != next.indiceRiga || temp.indiceColonna != next.indiceColonna)) {
-	searchPath(labirinto, currentX, currentY-1, destinationX, destinationY, gridXsize, gridYsize);
+	      searchPath(labirinto, currentX, currentY-1, destinationX, destinationY, gridXsize, gridYsize);
       }
     }
   } else {

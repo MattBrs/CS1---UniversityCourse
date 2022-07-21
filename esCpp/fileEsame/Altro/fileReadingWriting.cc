@@ -38,7 +38,7 @@ int main() {
     std::cout << "I/O error while reading\n";
   else if (input.eof())
     std::cout << "End of file reached successfully\n";
-  else if (input.fail())
+  else if (input.fail() && !input.eof())
     std::cout << "Non-integer data encountered\n";
 
   

@@ -65,7 +65,7 @@ void delList(list list) {
   }
 }
 
-void addElement(list list, int newElement) {
+void addElement(list list, int newElement) {  
   while(list->next != NULL) {
     list = list->next;
   }
